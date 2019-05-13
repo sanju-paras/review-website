@@ -1,63 +1,76 @@
 import React from "react";
-import { Jumbotron, Col, Row } from "react-bootstrap";
-import Box from "./Card";
+import Card from "./Card";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  @media (min-width: 350px) {
+  @media (min-width: 765px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
+`;
 
-  margin: 1rem 0;
+const Container = styled.div`
+  background-color: #011936;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+`;
+
+const Root = styled.div`
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.12);
 `;
 
 export const Services = () => (
-  <>
-    <h3>Our Services</h3>
+  <Root>
+    <Container>
+      <h2>Our Services</h2>
+    </Container>
     <Wrapper>
-      <Box
+      <Card
         title="Review your financial health"
         text="A tool to help you identify the key aspects of your financial life
               that may need attention"
         link="#"
       />
 
-      <Box
+      <Card
         title="Review your super"
         text="Understand your options with superannuation savings and make the
               right steps towards building your nest egg"
         link="#"
       />
 
-      <Box
+      <Card
         title="Review your insurance"
         text="A tool to help you identify the key aspects of your financial life
               that may need attention"
         link="#"
       />
 
-      <Box
+      <Card
         title="Review your loans"
         text="A tool to help you identify the key aspects of your financial life
               that may need attention"
         link="#"
       />
 
-      <Box
+      <Card
         title="Review your estate planning"
         text="A tool to help you identify the key aspects of your financial life
               that may need attention"
         link="#"
       />
 
-      <Box
+      <Card
         title="Review your Centrelink Benefits"
         text="A tool to help you identify the key aspects of your financial life
               that may need attention"
       />
     </Wrapper>
-  </>
+  </Root>
 );

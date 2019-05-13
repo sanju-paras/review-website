@@ -1,41 +1,57 @@
 import React from "react";
-import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
 import handsImage from "../assets/hands_docs.jpg";
 
-const Styles = styled.div`
-  .jumbo {
-    background: url(${handsImage}) no-repeat fixed bottom;
-    background-size: cover;
-    color: #efefef;
-    position: relative;
-    z-index: -2;
+const StyledJumbo = styled.div`
+  background: url(${handsImage}) no-repeat fixed bottom;
+  background-size: cover;
+  color: #efefef;
+  position: absolute;
+  z-index: -1;
+  height: 80vh
+  width: 100%;
+`;
+
+const Overlay = styled.div`
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+`;
+
+const Container = styled.div`
+  padding: 2rem;
+  @media (min-width: 765px) {
+    padding: 10rem;
   }
-  .overlay {
-    background-color: #000;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-  }
+  text-align: center;
+`;
+
+const H1 = styled.h1`
+  color: white;
+`;
+
+const P = styled.p`
+  color: white;
 `;
 
 export const Jumbotron = () => (
-  <Styles>
-    <Jumbo fluid className="jumbo">
-      <div className="overlay" />
-      <Container>
-        <h1>Review Financial Group</h1>
-        <p>
-          "Important financial decisions must be REVIEWed regularly and adjusted
-          to take into account changes to your circumstances and objectives. A
-          plan is only as good as the timing, process and skill with which it is
-          REVIEWed"
-        </p>
-      </Container>
-    </Jumbo>
-  </Styles>
+  <>
+    <StyledJumbo>
+      <Overlay />
+    </StyledJumbo>
+    <Container>
+      <H1>Review Financial Group</H1>
+      <P>
+        "Important financial decisions must be REVIEWed regularly and adjusted
+        to take into account changes to your circumstances and objectives. A
+        plan is only as good as the timing, process and skill with which it is
+        REVIEWed"
+      </P>
+    </Container>
+  </>
 );

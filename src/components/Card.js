@@ -1,28 +1,36 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const StyledCard = styled.div`
-  box-shadow: 0px 0px 2px 2px #ccc;
-  margin: 1rem 0;
-  width: 18rem;
+const Wrapper = styled.div`
+  border-top: solid 1px #e6e7e7;
+  @media (min-width: 765px) {
+    width: 18rem;
+  }
 `;
 
-const Box = ({ title, text, link, ...props }) => (
-  <StyledCard>
-    <Card.Body>
-      <Card.Title>{title}</Card.Title>
-      <Card.Text>{text}</Card.Text>
-      <Card.Link href={link}>See more</Card.Link>
-    </Card.Body>
-  </StyledCard>
+const StyledCard = styled.div`
+  margin: 25px;
+`;
+
+const Title = styled.h5`
+  margin-bottom: 1rem;
+`;
+
+const Card = ({ title, text, link, ...props }) => (
+  <Wrapper>
+    <StyledCard>
+      <Title>{title}</Title>
+      <p>{text}</p>
+      <a href={link}>See more</a>
+    </StyledCard>
+  </Wrapper>
 );
 
-Box.propTypes = {
+Card.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   link: PropTypes.string
 };
 
-export default Box;
+export default Card;
