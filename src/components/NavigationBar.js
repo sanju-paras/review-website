@@ -2,26 +2,35 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
+import logo from "../assets/logo.jpg";
+
+const Image = styled.img`
+  margin: auto;
+  width: 150px;
+  @media (min-width: 576px) {
+    width: 70%;
+    height: 100%;
+  }
+`;
 
 const Styles = styled.div`
   .navbar {
-    padding: 0;
-    background-color: #011936;
     width: 100%;
+    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.12);
   }
   .navbar-collapse {
     padding: 1rem;
   }
   .navbar-brand {
-    padding-left: 1rem;
-    color: white;
+    padding-left: 2rem;
+    color: #252935;
     &:hover {
       color: #fa6e0d;
     }
   }
   a,
   .navbar-nav .nav-link {
-    color: white;
+    color: #252935;
     &:hover {
       color: #fa6e0d;
       text-decoration: none;
@@ -32,7 +41,9 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Review Financial Group</Navbar.Brand>
+      <Navbar.Brand href="/">
+        <Image src={logo} alt="Review Financial Group" />
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">

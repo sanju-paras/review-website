@@ -1,57 +1,71 @@
 import React from "react";
 import styled from "styled-components";
-import handsImage from "../assets/hands_docs.jpg";
+import handsImage from "../assets/HandsDocs.png";
 
-const StyledJumbo = styled.div`
-  background: url(${handsImage}) no-repeat fixed bottom;
-  background-size: cover;
-  color: #efefef;
-  position: absolute;
-  z-index: -1;
-  height: 80vh
-  width: 100%;
-`;
-
-const Overlay = styled.div`
-  background-color: black;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+const Image = styled.img`
+  display: none;
+  @media (min-width: 765px) {
+    display: block;
+    width: 60%;
+    height: 100%;
+  }
 `;
 
 const Container = styled.div`
-  padding: 2rem;
+  width: 90%;
+  margin: 3rem;
   @media (min-width: 765px) {
-    padding: 10rem;
+    width: 40%;
   }
   text-align: center;
+  flex-shrink: 1;
 `;
 
 const H1 = styled.h1`
-  color: white;
+  color: #5438dc;
 `;
 
 const P = styled.p`
-  color: white;
+  /* color: white; */
+`;
+
+const ActionButton = styled.a`
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #fe7e14;
+  padding: 0.5rem;
+  border: 2px solid #fe7e14;
+  border-radius: 6px;
+  display: inline-block;
+  :hover {
+    color: #ffffff;
+    background: #e86800;
+    border-color: #e86800;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Jumbotron = () => (
-  <>
-    <StyledJumbo>
-      <Overlay />
-    </StyledJumbo>
+  <Wrapper>
     <Container>
-      <H1>Review Financial Group</H1>
+      <H1>Review your finances </H1>
       <P>
-        "Important financial decisions must be REVIEWed regularly and adjusted
-        to take into account changes to your circumstances and objectives. A
-        plan is only as good as the timing, process and skill with which it is
-        REVIEWed"
+        Important financial decisions must be REVIEWed regularly and adjusted to
+        take into account changes to your circumstances and objectives.
       </P>
+      <div class="button_cont" align="center">
+        <ActionButton class="example_c" href="add-website-here" target="_blank">
+          Book a free review
+        </ActionButton>
+      </div>
     </Container>
-  </>
+    <Image src={handsImage} alt="HandsDocs.png" />
+  </Wrapper>
 );

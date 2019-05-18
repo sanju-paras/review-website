@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  background-color: #011936;
+  background-color: #2e1f78;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -26,51 +26,53 @@ const Root = styled.div`
 `;
 
 export const Services = () => (
-  <Root>
-    <Container>
-      <h2>Our Services</h2>
-    </Container>
-    <Wrapper>
-      <Card
-        title="Review your financial health"
-        text="A tool to help you identify the key aspects of your financial life
+  <>
+    <Root>
+      <Container>
+        <h2>Our Services</h2>
+      </Container>
+      <Wrapper>
+        <Card
+          title="Review your financial health"
+          text="A tool to help you identify the key aspects of your financial life
               that may need attention"
-        link="#"
-      />
+          link="#"
+        />
 
-      <Card
-        title="Review your super"
-        text="Understand your options with superannuation savings and make the
+        <Card
+          title="Review your super"
+          text="Understand your options with superannuation savings and make the
               right steps towards building your nest egg"
-        link="#"
-      />
+          link="#"
+        />
 
-      <Card
-        title="Review your insurance"
-        text="A tool to help you identify the key aspects of your financial life
+        <Card
+          title="Review your insurance"
+          text="A tool to help you identify the key aspects of your financial life
               that may need attention"
-        link="#"
-      />
+          link="#"
+        />
 
-      <Card
-        title="Review your loans"
-        text="A tool to help you identify the key aspects of your financial life
+        <Card
+          title="Review your loans"
+          text="A tool to help you identify the key aspects of your financial life
               that may need attention"
-        link="#"
-      />
+          link="#"
+        />
 
-      <Card
-        title="Review your estate planning"
-        text="A tool to help you identify the key aspects of your financial life
+        <Card
+          title="Review your estate planning"
+          text="A tool to help you identify the key aspects of your financial life
               that may need attention"
-        link="#"
-      />
+          link="#"
+        />
 
-      <Card
-        title="Review your Centrelink Benefits"
-        text="A tool to help you identify the key aspects of your financial life
+        <Card
+          title="Review your Centrelink Benefits"
+          text="A tool to help you identify the key aspects of your financial life
               that may need attention"
-      />
-    </Wrapper>
-  </Root>
+        />
+      </Wrapper>
+    </Root>
+  </>
 );

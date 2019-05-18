@@ -2,29 +2,31 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const Wrapper = styled.div`
+const StyledCard = styled.div`
   border-top: solid 1px #e6e7e7;
   @media (min-width: 765px) {
     width: 18rem;
   }
-`;
-
-const StyledCard = styled.div`
-  margin: 25px;
+  padding: 25px;
 `;
 
 const Title = styled.h5`
   margin-bottom: 1rem;
 `;
 
+const P = styled.p`
+  display: block;
+  @media (max-width: 576px) {
+    display: none;
+  }
+`;
+
 const Card = ({ title, text, link, ...props }) => (
-  <Wrapper>
-    <StyledCard>
-      <Title>{title}</Title>
-      <p>{text}</p>
-      <a href={link}>See more</a>
-    </StyledCard>
-  </Wrapper>
+  <StyledCard>
+    <Title>{title}</Title>
+    <P>{text}</P>
+    <a href={link}>See more</a>
+  </StyledCard>
 );
 
 Card.propTypes = {
