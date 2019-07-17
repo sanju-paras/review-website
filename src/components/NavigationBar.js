@@ -44,6 +44,7 @@ export const NavigationBar = () => (
       <Navbar.Brand href="/">
         <Image src={logo} alt="Review Financial Group" />
       </Navbar.Brand>
+      <Navbar.Text>1300 2 Review</Navbar.Text>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">

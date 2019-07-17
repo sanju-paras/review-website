@@ -4,9 +4,10 @@ import handsImage from "../assets/HandsDocs.png";
 
 const Image = styled.img`
   display: none;
+  object-fit: cover;
   @media (min-width: 765px) {
     display: block;
-    width: 60%;
+    width: 50vw;
     height: 100%;
   }
 `;
@@ -14,6 +15,7 @@ const Image = styled.img`
 const Container = styled.div`
   width: 90%;
   margin: 3rem;
+  margin-left: 5rem;
   @media (min-width: 765px) {
     width: 40%;
   }
@@ -48,7 +50,7 @@ const ActionButton = styled.a`
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -57,8 +59,9 @@ export const Jumbotron = () => (
     <Container>
       <H1>Review your finances </H1>
       <P>
-        Important financial decisions must be REVIEWed regularly and adjusted to
-        take into account changes to your circumstances and objectives.
+        Important financial decisions must be <u>reviewed</u> regularly and
+        adjusted to take into account changes to your circumstances and
+        objectives.
       </P>
       <div class="button_cont" align="center">
         <ActionButton class="example_c" href="add-website-here" target="_blank">

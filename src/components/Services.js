@@ -48,29 +48,29 @@ export const Services = () => (
 
         <Card
           title="Review your insurance"
-          text="A tool to help you identify the key aspects of your financial life
-              that may need attention"
+          text="Understand the various insurance options available to you and get help 
+          to decide which risks worth insuring"
           link="#"
         />
 
         <Card
           title="Review your loans"
-          text="A tool to help you identify the key aspects of your financial life
-              that may need attention"
+          text="Restructure your debt to find the right loan for you. We can help
+           you to save many thousands of dollars over the life of the loan."
           link="#"
         />
 
         <Card
           title="Review your estate planning"
-          text="A tool to help you identify the key aspects of your financial life
-              that may need attention"
+          text="Sort out your Power of Attorney, executors, and determine the best way 
+          to distribute your assets in the most tax effective manner."
           link="#"
         />
 
         <Card
           title="Review your Centrelink Benefits"
-          text="A tool to help you identify the key aspects of your financial life
-              that may need attention"
+          text="Find what your entitlements may be, and get help with filling out 
+          and lodging any forms."
         />
       </Wrapper>
     </Root>
