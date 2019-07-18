@@ -48,17 +48,14 @@ export const Footer = () => (
         General Advice Warning
       </Link>
       <Link
-        href="/static/documents/FSG.pdf"
+        href="FSG.pdf"
+        target="_blank"
         data-ob="lightbox"
         data-ob_share="false"
       >
         FSG
       </Link>
-      <Link
-        href="/static/documents/privacypolicy.pdf"
-        data-ob="lightbox"
-        data-ob_share="false"
-      >
+      <Link href="privacypolicy.pdf" target="_blank">
         Privacy Policy
       </Link>
     </Links>

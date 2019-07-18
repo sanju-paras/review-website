@@ -25,7 +25,6 @@ const Card = ({ title, text, link, ...props }) => (
   <StyledCard>
     <Title>{title}</Title>
     <P>{text}</P>
-    <a href={link}>See more</a>
   </StyledCard>
 );
 
