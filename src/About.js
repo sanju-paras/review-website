@@ -8,17 +8,6 @@ const H1 = styled.h1`
   margin: 2rem 1rem 1rem;
   color: #5438dc;
 `;
-
-const Container = styled.div`
-  margin: 1rem;
-  @media (min-width: 765px) {
-    display: flex;
-    justify-content: center;
-    margin: 5rem;
-    margin-top: 2rem;
-  }
-`;
-
 const Title = styled.p`
   text-transform: uppercase;
   color: #fe7e14;
@@ -48,13 +37,12 @@ export const About = () => (
   <>
     <H1>About Us</H1>
     <P>
-      We are Review Financial Group, a family owned business passionate in
+      We are Review Financial Group, a family owned business with a passion for
       demystifying finance for you.
     </P>
 
-    <Container>
-      <Team />
-    </Container>
+    <Team />
+
     <MissionContainer>
       <Content>
         <Title>Our Mission</Title>
@@ -63,7 +51,7 @@ export const About = () => (
           our clients from different walks of life, establish a simple path to
           achieve their financial goals and lifestyle aspirations
         </p>
-        <p>Together, we can do Great Things</p>
+        <p>Together, we can do Great Things.</p>
       </Content>
     </MissionContainer>
     <Process />

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import handsImage from "../assets/HandsDocs.png";
+import handsImage from "../assets/HandsDocs.jpeg";
 
 const Image = styled.img`
   display: none;
@@ -31,44 +31,24 @@ const P = styled.p`
   /* color: white; */
 `;
 
-const ActionButton = styled.a`
-  color: #ffffff;
-  text-transform: uppercase;
-  background: #fe7e14;
-  padding: 0.5rem;
-  border: 2px solid #fe7e14;
-  border-radius: 6px;
-  display: inline-block;
-  :hover {
-    color: #ffffff;
-    background: #e86800;
-    border-color: #e86800;
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-  }
-`;
-
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 3rem;
 `;
 
 export const Jumbotron = () => (
   <Wrapper>
     <Container>
-      <H1>Review your finances </H1>
+      <H1>
+        <i>Review</i> your finances
+      </H1>
       <P>
-        Important financial decisions must be <u>reviewed</u> regularly and
-        adjusted to take into account changes to your circumstances and
-        objectives.
+        Important financial decisions must be reviewed regularly and adjusted to
+        take into account changes to your circumstances and objectives.
       </P>
-      <div class="button_cont" align="center">
-        <ActionButton class="example_c" href="add-website-here" target="_blank">
-          Book a free review
-        </ActionButton>
-      </div>
     </Container>
-    <Image src={handsImage} alt="HandsDocs.png" />
+    <Image src={handsImage} alt="HandsDocs.jpg" />
   </Wrapper>
 );

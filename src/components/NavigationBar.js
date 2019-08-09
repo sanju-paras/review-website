@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.jpeg";
 
 const Image = styled.img`
   margin: auto;
@@ -34,6 +34,15 @@ const Styles = styled.div`
     &:hover {
       color: #fa6e0d;
       text-decoration: none;
+    }
+  }
+
+  .navbar-text {
+    display: none;
+    @media (min-width: 530px) {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 700;
     }
   }
 `;

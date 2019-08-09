@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   background-color: #343434;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,10 +11,12 @@ const Container = styled.div`
 
 const FooterText = styled.p`
   color: white;
+  font-size: 0.75rem;
 `;
 
 const Link = styled.a`
   margin: 0 1rem;
+  font-size: 0.75rem;
 `;
 
 const Links = styled.div`
@@ -28,16 +30,23 @@ const Links = styled.div`
   margin: 0 1rem;
 `;
 
+const Copy = styled.p`
+  color: white;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+`;
+
 export const Footer = () => (
   <Container>
     <FooterText>
       Yvonne Parasuraman of Simple Path Financial Solutions, ABN 84 851 340 081
-      t/a REVIEW Financial Group Pty Ltd, are Authorised Representatives of
+      t/a REVIEW Financial Group, are Authorised Representatives of
       Garvan Financial Planning Limited ABN 96 002 071 749 Australian Financial
       Services Licensee Register Office at 105 - 153 Miller Street North Sydney
       NSW 2060
     </FooterText>
-    <FooterText>© 2019 Review Financial Group Ltd</FooterText>
+
     <Links>
       <Link
         href="/license"
@@ -59,5 +68,6 @@ export const Footer = () => (
         Privacy Policy
       </Link>
     </Links>
+    <Copy>© 2019 Review Financial Group</Copy>
   </Container>
 );

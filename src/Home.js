@@ -15,10 +15,6 @@ const Overlay = styled.div`
   background: url("./assets/pattern-2.png") right top no-repeat;
 `;
 
-const H3 = styled.h3`
-  color: #012068;
-`;
-
 const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -56,7 +52,9 @@ export const Home = () => (
         <Content>
           <Title>Who we are</Title>
           <h3>Trusted financial experts.</h3>
-          <p>We are a team of passionate advisors who do our best work together.</p>
+          <p>
+            We are a team of passionate advisors who do our best work together.
+          </p>
           <p>
             We provide client-centric financial advice, based on the foundation
             of lasting partnership, assisting our clients grow, consolidate and
