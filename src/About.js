@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Team } from "./components/Team";
 import { Process } from "./components/Process";
+import Helmet from "react-helmet";
 
 const H1 = styled.h1`
   text-align: center;
@@ -35,6 +36,7 @@ const MissionContainer = styled.div`
 
 export const About = () => (
   <>
+    <Helmet title="About" />
     <H1>About Us</H1>
     <P>
       We are Review Financial Group, a family owned business with a passion for

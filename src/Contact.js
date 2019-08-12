@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Helmet from "react-helmet";
 
 const Container = styled.div`
   margin: 1rem;
@@ -12,7 +13,6 @@ const Container = styled.div`
 `;
 
 const Section = styled.div`
-  text-align: center;
   @media (min-width: 765px) {
     display: flex;
   }
@@ -46,6 +46,7 @@ const H1 = styled.h1`
 
 export const Contact = () => (
   <>
+    <Helmet title="Contact us" />
     <H1>Contact Us</H1>
     <Container>
       <Details>
@@ -59,6 +60,10 @@ export const Contact = () => (
           </Value>
         </Section>
 
+        <Section>
+          <Label>Opening hours: </Label>
+          <Value>Mon-Fri: 9am - 5pm</Value>
+        </Section>
         <Section>
           <Label>Postal Address:</Label>
           <Value>

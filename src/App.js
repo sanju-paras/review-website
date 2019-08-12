@@ -9,6 +9,7 @@ import { NoMatch } from "./NoMatch";
 import { NavigationBar } from "./components/NavigationBar";
 import { Footer } from "./components/Footer";
 import styled from "styled-components";
+import Helmet from "react-helmet";
 
 const Root = styled.div``;
 
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <Root>
         <Router>
+          <Helmet titleTemplate={`%s - Review Financial Group`} />
           <NavigationBar />
           <Switch>
             <Route exact path="/" component={Home} />

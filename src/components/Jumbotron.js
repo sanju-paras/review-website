@@ -15,8 +15,8 @@ const Image = styled.img`
 const Container = styled.div`
   width: 90%;
   margin: 3rem;
-  margin-left: 5rem;
   @media (min-width: 765px) {
+    margin-left: 5rem;
     width: 40%;
   }
   text-align: center;
@@ -35,15 +35,15 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 3rem;
+  @media (min-width: 775px) {
+    margin-left: 3rem;
+  }
 `;
 
 export const Jumbotron = () => (
   <Wrapper>
     <Container>
-      <H1>
-        <i>Review</i> your finances
-      </H1>
+      <H1>Review your finances</H1>
       <P>
         Important financial decisions must be reviewed regularly and adjusted to
         take into account changes to your circumstances and objectives.

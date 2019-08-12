@@ -8,11 +8,9 @@ const TeamContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 78vw;
   @media (min-width: 765px) {
     width: 60vw;
-  }
-  @media (max-width: 826px) {
-    align-items: center;
   }
 `;
 const Person = styled.div`
@@ -122,8 +120,11 @@ export const Team = () => (
       <Link>
         <Person>
           <Img src={yvonne} alt="Yvonne" width="50%" />
-          <Name>Yvonne Parasuraman</Name>
-          <Role>AFP® | B.A., B.Ed., ADFP</Role>
+          <Name>
+            Yvonne Parasuraman
+            <p style={{ fontSize: "0.75rem", display: "inline" }}> AFP®</p>
+          </Name>
+          <Role>B.A., B.Ed., ADFP</Role>
           <Description>
             Our Principal Financial Adviser, has over 25 years of experience in
             the Financial Services Industry in various roles, (Bank Manager,

@@ -4,6 +4,7 @@ import { Jumbotron } from "./components/Jumbotron";
 import { Services } from "./components/Services";
 import styled from "styled-components";
 import aboutIllustration from "./assets/about-1.png";
+import Helmet from "react-helmet";
 
 const Section = styled.div`
   padding: 3.5rem 0 4.3rem;
@@ -29,7 +30,10 @@ const Content = styled.div`
 `;
 
 const Image = styled.img`
-  width: 25rem;
+  width: 15rem;
+  @media (min-width: 775px) {
+    width: 25rem;
+  }
   object-fit: contain;
   align-self: flex-end;
 `;
@@ -42,6 +46,7 @@ const Title = styled.p`
 
 export const Home = () => (
   <>
+    <Helmet title="Home" />
     <Jumbotron />
     <Container>
       <Services />

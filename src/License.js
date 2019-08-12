@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Helmet from "react-helmet";
 
 const Container = styled.div`
   margin: 2rem;
@@ -7,6 +8,7 @@ const Container = styled.div`
 
 export const License = () => (
   <Container id="content">
+    <Helmet title="General Advice Warning" />
     <div class="mainContent pxt30">
       <div class="span-22 prepend-1 append-1 last">
         <h1>General Advice Warning</h1>
