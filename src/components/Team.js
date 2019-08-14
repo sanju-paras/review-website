@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import yvonne from "../assets/teamPhotos/Yvonne2.jpg";
-import aaron from "../assets/teamPhotos/Aaron.jpg";
-import nikki from "../assets/teamPhotos/Nikki.jpg";
+import yvonne from "../assets/teamPhotos/optimisedYvonne.png";
+import aaron from "../assets/teamPhotos/optimisedAaron.png";
+import nikki from "../assets/teamPhotos/optimisedNikki.png";
 
 const TeamContainer = styled.div`
   display: flex;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/optimised_logo.png";
 
 const Image = styled.img`
   margin: auto;

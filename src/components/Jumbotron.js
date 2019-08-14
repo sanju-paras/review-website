@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import handsImage from "../assets/HandsDocs.jpeg";
+import handsImage from "../assets/hand_docs.png";
 
 const Image = styled.img`
   display: none;

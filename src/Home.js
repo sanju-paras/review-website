@@ -3,17 +3,13 @@ import { Container } from "react-bootstrap";
 import { Jumbotron } from "./components/Jumbotron";
 import { Services } from "./components/Services";
 import styled from "styled-components";
-import aboutIllustration from "./assets/about-1.png";
+import aboutIllustration from "./assets/about.png";
 import Helmet from "react-helmet";
 
 const Section = styled.div`
   padding: 3.5rem 0 4.3rem;
   width: 100%;
   background: #ffffff;
-`;
-
-const Overlay = styled.div`
-  background: url("./assets/pattern-2.png") right top no-repeat;
 `;
 
 const AboutContainer = styled.div`
@@ -52,7 +48,6 @@ export const Home = () => (
       <Services />
     </Container>
     <Section>
-      <Overlay />
       <AboutContainer>
         <Content>
           <Title>Who we are</Title>
