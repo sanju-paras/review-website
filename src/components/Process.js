@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ProcessContainer = styled.div`
-  margin: 0 2rem;
+  margin: 2rem;
   @media (min-width: 765px) {
     margin: 1rem auto;
     width: 60vw;

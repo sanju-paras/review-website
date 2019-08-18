@@ -33,10 +33,9 @@ export const Services = () => (
       </Container>
       <Wrapper>
         <Card
-          title="Review your financial health"
-          text="A tool to help you identify the key aspects of your financial life
-              that may need attention"
-          link="#"
+          title="Review your Cash flow budget"
+          text="Review your household or business cash flow to feel more in control over your spending. 
+          All it takes is a little bit of thought and planning."
         />
 
         <Card

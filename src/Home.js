@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { Jumbotron } from "./components/Jumbotron";
 import { Services } from "./components/Services";
 import styled from "styled-components";
@@ -38,6 +37,23 @@ const Title = styled.p`
   text-transform: uppercase;
   color: #fe7e14;
   margin-bottom: 0.75rem;
+`;
+
+const Container = styled.div`
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 980px;
+  }
 `;
 
 export const Home = () => (

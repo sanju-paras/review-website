@@ -4,22 +4,25 @@ import PropTypes from "prop-types";
 
 const StyledCard = styled.div`
   border-top: solid 1px #e6e7e7;
+  padding: 0.5rem;
+  text-align: center;
+  @media (min-width: 576px) {
+    padding: 25px;
+  }
   @media (min-width: 765px) {
+    text-align: left;
     width: 18rem;
   }
-  padding: 25px;
 `;
 
 const Title = styled.h5`
-  margin-bottom: 1rem;
-`;
-
-const P = styled.p`
-  display: block;
-  @media (max-width: 576px) {
-    display: none;
+  margin-bottom: 0.5rem;
+  @media (min-width: 576px) {
+    margin-bottom: 1rem;
   }
 `;
+
+const P = styled.p``;
 
 const Card = ({ title, text, link, ...props }) => (
   <StyledCard>
