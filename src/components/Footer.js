@@ -12,6 +12,7 @@ const Container = styled.div`
 const FooterText = styled.p`
   color: white;
   font-size: 0.75rem;
+  text-align: center;
 `;
 
 const Link = styled.a`
@@ -41,8 +42,8 @@ export const Footer = () => (
   <Container>
     <FooterText>
       Yvonne Parasuraman of Simple Path Financial Solutions, ABN 84 851 340 081
-      t/a REVIEW Financial Group, are Authorised Representatives of
-      Garvan Financial Planning Limited ABN 96 002 071 749 Australian Financial
+      t/a REVIEW Financial Group, are Authorised Representatives of Garvan
+      Financial Planning Limited ABN 96 002 071 749 Australian Financial
       Services Licensee Register Office at 105 - 153 Miller Street North Sydney
       NSW 2060
     </FooterText>
