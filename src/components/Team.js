@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import yvonne from "../assets/teamPhotos/optimisedYvonne.png";
 import aaron from "../assets/teamPhotos/optimisedAaron.png";
-import nikki from "../assets/teamPhotos/optimisedNikki.png";
+import vincent from "../assets/teamPhotos/optimisedVincent1.png";
 
 const TeamContainer = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ const Person = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-width: 15rem;
   padding: 1rem;
   color: #333f48;
@@ -46,7 +46,7 @@ const Link = styled.a`
 
 const Name = styled.h3`
   font-size: 1.17rem;
-  margin: 0;
+  margin: 0.5rem 0 0;
 `;
 
 const Role = styled.h4`
@@ -54,7 +54,7 @@ const Role = styled.h4`
   line-height: 1.375rem;
   font-weight: normal;
   margin: 0.75rem 0;
-  margin-bottom: 0
+  margin-bottom: 0;
   color: #697684;
 `;
 
@@ -68,6 +68,7 @@ const Title = styled.p`
 const Img = styled.img`
   width: 100%;
   object-fit: contain;
+  height: 40%;
 `;
 
 const Description = styled.p`
@@ -134,29 +135,27 @@ export const Team = () => (
       </Link>
       <Link>
         <Person>
-          <Img
-            src={nikki}
-            alt="Nikki"
-            width="50%"
-            style={{ width: "50%", height: "50%" }}
-          />
-          <Name>Nikki Harris</Name>
-          <Role>Adv. Dip. FP, Grad.Cert. FP</Role>
+          <Img src={aaron} alt="Aaron" />
+          <Name>Aaron Whelan</Name>
+          <Role style={{ textAlign: "center" }}>
+            Client Services & Implementation
+          </Role>
           <Description>
-            Our pillar in customer service, supporting our clients in the
-            implementation, maintenance and management of their insurance and
-            financial planning strategies.
+            The voice of our practice, ensuring timely REVIEW of your insurance
+            policies, superannuation, and financial plan.
           </Description>
         </Person>
       </Link>
       <Link>
         <Person>
-          <Img src={aaron} alt="Aaron" width="50%" />
-          <Name>Aaron Whelan</Name>
-          <Role>Client Services & Implementation</Role>
+          <Img src={vincent} alt="Vincent" />
+          <Name>Vincent Nguyen</Name>
+          <Role>Administrative Assistant</Role>
           <Description>
-            The voice of our practice, ensuring timely REVIEW of your insurance
-            policies, superannuation, and financial plan.
+            Our pillar in customer service, supporting our clients with
+            financial planning research, data analysis, implementation,
+            maintenance and management of their insurance and financial planning
+            strategies.
           </Description>
         </Person>
       </Link>
