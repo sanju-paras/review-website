@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import yvonne from "../assets/teamPhotos/optimisedYvonne.png";
-import aaron from "../assets/teamPhotos/optimisedAaron.png";
+import paras from "../assets/teamPhotos/paras.jpg";
 import vincent from "../assets/teamPhotos/optimisedVincent1.png";
+import chenthen from "../assets/teamPhotos/chenthen.jpg";
+import danny from "../assets/teamPhotos/danny.jpg"
 
 const TeamContainer = styled.div`
   display: flex;
@@ -39,9 +41,6 @@ const Link = styled.a`
   @media (max-width: 511px) {
     margin: 0.5rem 0;
   }
-  @media (min-width: 765px) {
-    flex: 1;
-  }
 `;
 
 const Name = styled.h3`
@@ -50,6 +49,7 @@ const Name = styled.h3`
 `;
 
 const Role = styled.h4`
+  text-align: center;
   font-size: 1rem;
   line-height: 1.375rem;
   font-weight: normal;
@@ -73,35 +73,7 @@ const Img = styled.img`
 
 const Description = styled.p`
   margin-top: 0.5rem;
-`;
-
-const SupportStaff = styled.div`
-  display: flex;
-  flex: 1;
-  margin: 1rem;
-  @media (min-width: 765px) {
-    width: 60vw;
-    margin: 0rem 5rem;
-  }
-`;
-
-const Staff = styled.div`
-  margin-left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 15rem;
-
-  padding: 1rem;
-  color: #333f48;
-  box-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0.1875rem;
-  background-color: #ffffff;
-  height: 100%;
-  @media (max-width: 826px) {
-    max-width: 20rem;
-  }
+  text-align: center;
 `;
 
 const Container = styled.div`
@@ -123,7 +95,7 @@ export const Team = () => (
           <Img src={yvonne} alt="Yvonne" width="50%" />
           <Name>
             Yvonne Parasuraman
-            <p style={{ fontSize: "0.75rem", display: "inline" }}> AFP®</p>
+            <p style={{ fontSize: "0.75rem", display: "inline" }}> CFP®</p>
           </Name>
           <Role>B.A., B.Ed., ADFP</Role>
           <Description>
@@ -135,14 +107,13 @@ export const Team = () => (
       </Link>
       <Link>
         <Person>
-          <Img src={aaron} alt="Aaron" />
-          <Name>Aaron Whelan</Name>
-          <Role style={{ textAlign: "center" }}>
-            Client Services & Implementation
-          </Role>
+          <Img src={paras} alt="Paras" />
+          <Name>Paras Chandran<p style={{ fontSize: "0.75rem", display: "inline" }}> AFP®</p></Name>
+          <Role>B.E, ADFP</Role>
           <Description>
-            The voice of our practice, ensuring timely REVIEW of your insurance
-            policies, superannuation, and financial plan.
+            Our Director, has over 30 years of multi-disciplinary experience in
+            various roles, ensuring clients and the REVIEW team are well
+            supported in delivery of personalised advice and care.
           </Description>
         </Person>
       </Link>
@@ -150,26 +121,40 @@ export const Team = () => (
         <Person>
           <Img src={vincent} alt="Vincent" />
           <Name>Vincent Nguyen</Name>
-          <Role>Administrative Assistant</Role>
+          <Role>Associate - Research and Strategies</Role>
           <Description>
-            Our pillar in customer service, supporting our clients with
-            financial planning research, data analysis, implementation,
-            maintenance and management of their insurance and financial planning
+            Our budding finance professional supporting our clients and advisers
+            with financial product research, data analysis and preparation of
+            financial plans including superannuation, investments, insurance
+            strategies and cash flow modelling.
+          </Description>
+        </Person>
+      </Link>
+      <Link>
+        <Person>
+          <Img src={chenthen} alt="Chenthen" />
+          <Name>Chenthen Ragunathan</Name>
+          <Role>Associate - Client Services & Implementation</Role>
+          <Description>
+            The voice of our practice, ensuring timely implementation and REVIEW
+            of your insurance policies, superannuation, and financial plan.
             strategies.
           </Description>
         </Person>
       </Link>
-    </TeamContainer>
-    <SupportStaff>
       <Link>
-        <Staff>
-          <Name>Mark Whelan, Amanda Reid, and Joel Reyes</Name>
+        <Person>
+          <Img src={danny} alt="Danny" />
+          <Name>Danny Liu</Name>
+          <Role>Administrative Assistant</Role>
           <Description>
-            Members of our extended family, past and current, helping us provide
-            you holistic advice
+            Danny is our go to person at the office, bringing his energy,
+            enthusiasm and cheer to fore, taking care of the office
+            administration with a smile, ensuring clients are well taken care
+            of.
           </Description>
-        </Staff>
+        </Person>
       </Link>
-    </SupportStaff>
+    </TeamContainer>
   </Container>
 );
